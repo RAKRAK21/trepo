@@ -1,0 +1,23 @@
+{
+  "name": "trepo",
+  "version": "1.0.0",
+  "description": "coin market",
+  "main": "index.js",
+  "dependencies": {
+    "tar": "^6.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/RAKRAK21/trepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RAKRAK21/trepo/issues"
+  },
+  "homepage": "https://github.com/RAKRAK21/trepo#readme"
+}
