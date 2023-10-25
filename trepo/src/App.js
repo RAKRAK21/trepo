@@ -1,17 +1,20 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Empty from './empty';
+import React from 'react';
 import Header from './header';
+import Main from './main';
+import styled from 'styled-components';
+
+const MainContain = styled.div`
+  background-color: white;
+  padding-top: 13%;
+`;
 
 function App() {
   return (
     <div className="App">
-		   
-    	<BrowserRouter>
-          	<Routes>
-				<Route path= "/" element={<Header />}></Route>
-              	<Route path= "/emptyPage" element={<Empty />}></Route>
-          	</Routes>
-        </BrowserRouter>
+		<Header />
+      	<MainContain>
+        	<Main />
+      	</MainContain>
     </div>
   );
 }

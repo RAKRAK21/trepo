@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import React, {useState} from "react";
-import {useNavigate} from 'react-router-dom';
+import React from "react";
 import Burger from './burger';
 
 
@@ -17,7 +16,6 @@ const Container = styled.div`
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #dedede;
-    z-index: 100;
 `;
 
 const LeftContainer = styled.div`
@@ -61,11 +59,6 @@ const SText = styled.button`
 
 
 function Header() {
-	const navigate = useNavigate();
-	
-	function Navigate() {
-		navigate('/emptyPage');
-	}
 
 	return (
 		<Container>
@@ -74,8 +67,8 @@ function Header() {
 			</LeftContainer>
 
 			<RightContainer>
-				<SText onClick={Navigate}>REGISTER</SText>
-				<SText onClick={Navigate}>LOGIN</SText>
+				<SText >REGISTER</SText>
+				<SText >LOGIN</SText>
 				<Burger />
 			</RightContainer>
 		</Container>
